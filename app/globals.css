@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* ===== Warm / Cream Palette ===== */
+:root {
+  /* Backgrounds */
+  /* Warm background (utama) */
+  --bg: #e8d0a9;        /* warm cream */
+  --bg2: #eec489;       /* sedikit lebih gelap untuk gradient */
+
+  /* Surfaces (card & panel) */
+  --surface: #fffdf8;   /* card lebih terang */
+  --surface2: #f9f1e4;  /* textarea / inner surface */
+
+  /* Text */
+  --text: #2a2a2a;      /* dark neutral (aman di cream) */
+  --muted: #6f6a4e;     /* muted olive */
+
+  /* Borders & shadow */
+  --border: #e4d8c5;
+  --ring: rgba(225, 88, 92, 0.35);
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+  /* Brand */
+  --primary: #e1585c;        /* red */
+  --primary-hover: #d14c50; /* darker red */
+  --primary-soft: rgba(225, 88, 92, 0.15);
+
+  /* Accent */
+  --accent: #f6b05a;        /* orange */
+  --accent-soft: rgba(246, 176, 90, 0.25);
+
+  /* --- Layering polish --- */
+  --surface: #fffdf5;    /* card lebih “hangat” */
+  --surface2: #fff3cf;   /* inner surface lebih kontras dikit */
+  --border: #e8dcad;     /* border lebih lembut tapi tetap kelihatan */
+
+  /* --- Shadows & hover --- */
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 16px 40px rgba(0, 0, 0, 0.12);
+
+  /* --- Accent outline/glow (hover) --- */
+  --outline: rgba(246, 176, 90, 0.45); /* orange soft */
+  --ring: rgba(225, 88, 92, 0.35);     /* red soft ring */
+
+  /* --- Micro interaction --- */
+  --lift: translateY(-1px);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; }
