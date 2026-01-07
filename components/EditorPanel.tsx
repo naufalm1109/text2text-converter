@@ -1,5 +1,9 @@
 import { FileText } from "lucide-react";
-import { GeistMono } from "geist/font";
+import { Geist_Mono } from "next/font/google";
+
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+});
 
 type Props = {
   title: string;
@@ -86,7 +90,7 @@ export function EditorPanel({
           placeholder={placeholder}
           onChange={(e) => onChange?.(e.target.value)}
           className={[
-            GeistMono.className,
+            geistMono.className,
             `
               h-[360px] w-full resize-none rounded-xl
               border border-[color:var(--border)]
