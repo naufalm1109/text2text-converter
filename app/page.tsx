@@ -14,7 +14,7 @@ export default function HomePage() {
             below. Choose a tool to start.
           </p>
 
-          {/* filter placeholder (disabled / static) - sesuai scope: belum dipakai */}
+          {/* filter placeholder (disabled / static) - sesuai scope: belum dipakai
           <div className="mt-6 flex gap-3">
             <span className="inline-flex items-center rounded-full border border-amber-200 bg-amber-50 px-4 py-2 text-sm font-medium text-slate-900">
               All
@@ -22,7 +22,7 @@ export default function HomePage() {
             <span className="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700">
               Convert PDF
             </span>
-          </div>
+          </div> */}
         </header>
 
         <section className="mt-10 rounded-3xl border border-amber-100 bg-linear-to-b from-[#f7f0de] to-[#fbf6ea] p-6 shadow-sm sm:p-8">
