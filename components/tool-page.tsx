@@ -64,8 +64,20 @@ export default function ToolPage({ toolKey }: { toolKey: ToolKey }) {
         let msg = "Conversion failed.";
         try {
           const j = await res.json();
-          if (j?.error) msg = j.error;
+          if (typeof j?.error === "string") msg = j.error;
         } catch {}
+
+        // ✅ Demo mode: CloudConvert credits exceeded
+        if (msg.includes("CREDITS_EXCEEDED")) {
+          showToast({
+            type: "info",
+            title: "Demo mode limitation",
+            message:
+              "Daily conversion quota has been reached. This demo uses a third-party document conversion API with limited free credits. Please try again later.",
+          });
+          return;
+        }
+
         showToast({ type: "error", title: "Error", message: msg });
         return;
       }
